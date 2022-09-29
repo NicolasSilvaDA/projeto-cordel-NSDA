@@ -1,3 +1,8 @@
+:root {
+    --fundoSite: #000000ce;
+    --textoHeaderFooter: #f7f7f7;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,24 +13,36 @@ header {
     padding: 25px;
     width: 100%;
     text-align: center;
-    background-color: black;
+    background-color: var(--fundoSite);
 }
 
 header > h1 {
     margin-bottom: 20px;
-    color: white;
-}
-
-header > p {
-    color: white;
-}
-
-header > p > a {
-    color: white;
-    text-decoration: none;
-    font: normal bold 1em Arial, Helvetica, sans-serif;
+    color: var(--textoHeaderFooter);
 }
 
 header > p > a:hover {
     text-decoration: underline;
+}
+
+footer {
+    margin: 20px 0px;
+    padding: 15px;
+    width: 100%;
+    background-color: var(--fundoSite);
+    text-align: center;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
+.headFoot {
+    color: var(--textoHeaderFooter);
+}
+
+.headFootLink {
+    color: var(--textoHeaderFooter);
+    text-decoration: none;
+    font: normal bold 1em Arial, Helvetica, sans-serif;
 }
