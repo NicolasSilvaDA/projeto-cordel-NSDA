@@ -27,11 +27,12 @@
 
 body {
     min-height: 100vh;
+    width: 100%;
     font-family: var(--fontePadrao);
 }
 
 header {
-    padding: 25px;
+    padding: 40px 0px;
     width: 100%;
     text-align: center;
     background-color: var(--fundoSite);
@@ -40,6 +41,7 @@ header {
 header > h1 {
     margin-bottom: 20px;
     font-variant: small-caps;
+    font-size: 3em;
     color: var(--textoHeaderFooter);
     font-family: var(--fonteTitulo);
 }
@@ -48,14 +50,23 @@ header > p > a:hover {
     text-decoration: underline;
 }
 
+main {
+    width: 100%;
+}
+
 section {
     padding: 10vh 0px 10vh 25px;
     line-height: 1.5em;
     font-family: var(--fonteParagrafo);
+    font-size: 1.5em;
+}
+
+section > p {
+    padding: 5px 0px 15px 10px;
 }
 
 footer {
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
     padding: 15px;
     width: 100%;
     background-color: var(--fundoSite);
@@ -81,11 +92,29 @@ footer > p > a:hover {
     color: black;
 }
 
-.conteudo {
-    background-color: rgba(26, 25, 25, 0.466);
+.vazia > p {
+    width: 400px;
 }
 
-.conteudo > p{
-    width: 450px;
+.conteudo {
+    background-color: rgba(26, 25, 25, 0.466);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.541);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.conteudo > p {
+    width: 400px;
     background-color: rgba(27, 26, 26, 0.466);
+    text-shadow: 1px 1px 0.5px black;
+    color: white;
+}
+
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
