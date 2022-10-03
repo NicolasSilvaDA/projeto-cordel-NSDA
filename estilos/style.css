@@ -1,19 +1,33 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Caveat', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+}
+
+@font-face {
+    font-family: 'Satisfy', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+}
+
 :root {
     --fundoSite: #000000ce;
     --textoHeaderFooter: #f7f7f7;
     --secaoNormal: #f1f19d;
+    --fontePadrao: Arial, Helvetica, sans-serif;
+    --fonteTitulo: 'Caveat', cursive;
+    --fonteParagrafo: 'Satisfy', cursive;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 
 body {
     min-height: 100vh;
+    font-family: var(--fontePadrao);
 }
 
 header {
@@ -27,6 +41,7 @@ header > h1 {
     margin-bottom: 20px;
     font-variant: small-caps;
     color: var(--textoHeaderFooter);
+    font-family: var(--fonteTitulo);
 }
 
 header > p > a:hover {
@@ -36,7 +51,7 @@ header > p > a:hover {
 section {
     padding: 10vh 0px 10vh 25px;
     line-height: 1.5em;
-    
+    font-family: var(--fonteParagrafo);
 }
 
 footer {
