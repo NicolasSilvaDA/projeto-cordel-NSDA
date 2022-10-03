@@ -67,7 +67,7 @@ section > p {
 
 footer {
     margin: 20px 0px 0px 0px;
-    padding: 15px;
+    padding: 15px 0px;
     width: 100%;
     background-color: var(--fundoSite);
     text-align: center;
